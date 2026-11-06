@@ -1,0 +1,209 @@
+
+/* BACKGROUND */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("backgroundgr.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'MyFont', sans-serif;
+    margin: 0;
+}
+
+
+/* MAIN TITLE */
+
+.title-box {
+    text-align: center;
+    background-color: lightpink;
+    color: darkred;
+    padding: 20px;
+    margin: 30px auto;
+    width: 90%;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: darkred;
+}
+
+
+/* HEADINGS */
+
+h2 {
+    text-align: center;
+    color: darkblue;
+    background-color: lightblue;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+
+/* SOCIAL MEDIA BOX */
+
+.social-box {
+    margin: 30px auto;
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+
+/* SOCIAL MEDIA CARDS */
+
+.apps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.app {
+    flex: 1 1 150px;
+    padding: 15px;
+    min-width: 130px;
+    text-align: center;
+    background-color: rgb(255, 219, 219);
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgb(255, 92, 137);
+    transition: transform 0.3s ease;
+}
+
+.app img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.app:hover {
+    transform: scale(1.08);
+}
+
+
+/* MAIN CONTENT */
+
+div.content {
+    display: block;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+/* TEXT BOXES */
+
+.text-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 15px;
+    line-height: 1.8;
+    text-align: justify;
+    transition: transform 0.3s ease;
+}
+
+.text-box:hover {
+    transform: scale(1.01);
+}
+
+
+/* APPLICATION INFORMATION */
+
+.app-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.info {
+    flex: 1 1 200px;
+    min-width: 180px;
+    padding: 20px;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgb(163, 185, 241);
+    transition: transform 0.3s ease;
+}
+
+.info img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.info p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.info:hover {
+    transform: scale(1.05);
+}
+
+
+/* PICTURES */
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.picture {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.picture img {
+    width: 100%;
+    max-width: 400px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.picture img:hover {
+    transform: scale(1.05);
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* CONCLUSION */
+
+.kesimpulan {
+    background-color: lightpink;
+    color: darkred;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 15px;
+    line-height: 1.8;
+    transition: transform 0.3s ease;
+}
+
+.kesimpulan:hover {
+    transform: scale(1.02);
+}
+
+.kesimpulan h2 {
+    background-color: transparent;
+    color: darkred;
+}

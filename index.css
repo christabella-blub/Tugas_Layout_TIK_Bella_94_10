@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* Style the header */
+.header{
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}    
+/* style untuk navigator menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Style pada content */
+.column {
+    float: left;
+    padding: 10px;
+}
+.column.side{
+    width: 25%;
+}
+.column.middle{
+    width: 50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style pada Table */
+table,th,td{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    width: 70%;
+}
+th,td{
+    padding: 5px;
+    text-align: left;
+}
+tr:nth-child(odd){
+    background-color: lightblue;
+}
+tr:nth-child(even){
+    background-color:beige;
+}
+tr:hover{
+    background-color: #ddd;
+}
+ol{
+    list-style-type: upper-latin;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: white;
+}
+
+.container {
+    background-color: #e9967a;
+    padding: 5px;
+    width: 95%;
+    margin: auto;
+}
+
+h4 {
+    font-size: 13px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.buah {
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+.buah li {
+    background-color: greenyellow;
+    padding: 4px;
+    margin: 2px;
+    font-size: 12px;
+}
+
+/* Pisang beda warna */
+.buah li:nth-child(3) {
+    background-color: goldenrod;
+}
+
+.lorem {
+    background-color: darkseagreen;
+    padding: 10px;
+}
+
+.lorem li {
+    background-color: pink;
+    padding: 5px;
+    margin: 3px;
+    font-size: 12px;
+}
+
+.icons {
+    background-color: darkseagreen;
+    padding: 10px;
+}
+
+.icons li {
+    background-color: yellow;
+    padding: 4px;
+    margin: 2px;
+    font-size: 12px;
+}
+
+.icons i {
+    color: black;
+}
+
+
+body {
+    background-color: #f8f6ff;
+    font-family: Arial, sans-serif;
+}
+
+

@@ -1,0 +1,274 @@
+
+/* BACKGROUND */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f5ff;
+    background-image: url("backgroundgr.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: #333344;
+    margin: 0;
+}
+
+
+/* MAIN HEADINGS */
+
+h1 {
+    text-align: center;
+    color: darkred;
+    background-color: lightpink;
+    padding: 15px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+h1:hover {
+    color: #e85d8e;
+    transform: scale(1.02);
+}
+
+h2 {
+    text-align: center;
+    color: darkblue;
+    background-color: lightblue;
+    padding: 12px;
+    width: 90%;
+    margin: 35px auto 25px;
+    border-radius: 12px;
+}
+h2.hover {
+    color: #1e90ff;
+    transform: scale(1.02);
+}
+
+/* BIODATA BOX */
+
+.biodata {
+    margin: 30px auto;
+    width: 80%;
+    background-color: lightblue;
+    color: darkblue;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgb(163, 185, 241);
+    transition: 0.3s;
+}
+
+.biodata:hover {
+    box-shadow: 0 10px 20px rgb(163, 185, 241);
+}
+
+
+/* PHOTO AND INFORMATION */
+
+.biodata .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.isi {
+    flex: 1;
+    min-width: 220px;
+}
+
+.isi p {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.isi p:hover {
+    transform: translateX(5px);
+    box-shadow: 0 3px 8px rgb(163, 185, 241);
+}
+
+
+/* PHOTO HOVER EFFECT */
+
+.foto {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 3px solid darkblue;
+    flex-shrink: 0;
+}
+
+.foto img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.foto img.top {
+    opacity: 1;
+    z-index: 2;
+}
+
+.foto img.bottom {
+    opacity: 0;
+    z-index: 1;
+}
+
+.foto:hover img.top {
+    transform: scale(1.1);
+    opacity: 0;
+}
+
+.foto:hover img.bottom {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+/* FOOD, APPS, ANIMALS AND MOVIES */
+
+.Makanan,
+.Aplikasi,
+.Animals,
+.Movies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 95%;
+    margin: 30px auto;
+}
+
+
+/* GENERAL CARD DESIGN */
+
+.food,
+.app,
+.animal,
+.movie {
+    flex: 1 1 200px;
+    max-width: 280px;
+    min-width: 180px;
+    min-height: 275px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+/* FOOD */
+
+.food {
+    background-color: hsl(212, 100%, 89%);
+    box-shadow: 0 3px 8px rgb(163, 185, 241);
+}
+
+
+/* APPLICATIONS */
+
+.app {
+    background-color: rgb(255, 219, 219);
+    box-shadow: 0 3px 8px rgb(255, 92, 137);
+}
+
+
+/* ANIMALS */
+
+.animal {
+    background-color: hwb(44 51% 0%);
+    box-shadow: 0 3px 8px rgb(245, 192, 79);
+}
+
+
+/* MOVIES */
+
+.movie {
+    background-color: hwb(200 53% 6%);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* IMAGE SETTINGS */
+
+.food img,
+.app img,
+.animal img,
+.movie img {
+    width: 100%;
+    max-width: 200px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+
+/* HOVER EFFECTS */
+
+.food:hover,
+.app:hover,
+.animal:hover,
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.food img:hover,
+.app img:hover,
+.animal img:hover,
+.movie img:hover {
+    transform: scale(1.05);
+}
+
+
+/* TEXT INSIDE CARDS */
+
+.food p,
+.app p,
+.animal p,
+.movie p {
+    font-size: 18px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    .biodata {
+        width: 95%;
+    }
+
+    .biodata .content {
+        flex-direction: column;
+    }
+
+    .foto {
+        width: 200px;
+        height: 200px;
+    }
+
+    .food,
+    .app,
+    .animal,
+    .movie {
+        max-width: 100%;
+    }
+}
